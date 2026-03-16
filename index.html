@@ -1,75 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="style.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Flavors – Taste the World</title>
 
-</head> 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
-<header>
-    <nav class = "navbar" >
-        <a href = "" >logo</a>
-        <div class="logo-icon"></div>
-        Global Flavor  
-        </a>
-        </nav>
-            <ul>
-            <li><a href = "" class ="Home"> Home</a></li>
-            <li> <a href="Our recipes">Our recipes</a></li> 
-            <li><a href="About us">About us</a></li>
-            <li><a href="Contact us">Contact us</a></li>
+  <!-- Hubungkan file CSS eksternal -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <div class="logo-icon">🍽</div>
+        Global Flavors
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#specials">Our Recipes</a></li>
+          <li><a href="#mission">About Us</a></li>
+          <li><a href="#newsletter">Contact</a></li>
         </ul>
-</header>
+      </nav>
+      <button class="btn-login">Login</button>
+    </nav>
+  </header>
 
-<section class="hero">
-    
-<div class="hero-bg"></div>
-<div class="hero-content">
-    <span class="title-hero">The World on Your Plate</span>
-    <h1>Taste the World</h1>
-    <p>Embark on a culinary journey across continents.
-        Discover authentic recipes passed down through
-        generations.</p>
 
-</div>
-<div>
-    <div class="hero-buttons">
-        <a href="#Primary-menu" class="btn-primary">Explore recipes </a>  
-        <a href="#Mission" class="btn-outline">Our Mission</a>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">The World on Your Plate</span>
+      <h1>Taste the <span>World</span></h1>
+      <p>
+        Embark on a culinary journey across continents.
+        Discover authentic recipes passed down through generations.
+      </p>
+      <div class="hero-buttons">
+        <a href="#specials" class="btn-primary">Explore Recipes</a>
+        <a href="#mission" class="btn-outline">Our Mission</a>
+      </div>
     </div>
-<!-- icon nav bar -->
+    <div class="hero-scroll">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="rgba(255,255,255,0.5)" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+    </div>
+  </section>
 
-</div>
-</section>
 
-<div class="icon-nav">
-    <div class="icon-nav-item">
-        <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/home--v1.png" alt="home--v1"/>
-        <span>Home</span>
-        <div class="icon">
-            <div class="icon-home"></div>
-        <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/restaurant-building.png" alt="restaurant-building"/>
-        <span>Recipes</span>
-        <div class="icon">
-            <div class="icon-Recipes"></div>
-        <img width="32" height="32" src="https://img.icons8.com/windows/32/compass-west--v3.png" alt="compass-west--v3"/>
-        <span>Recipes</span>
-        <div class="icon">
-            <div class="icon-About"></div>
-        <img width="32" height="32" src="https://img.icons8.com/windows/32/email.png" alt="email"/>
-        <span>Contact</span>
-        <div class="icon">
-            <div class="icon-Contact"></div>
+  <div id="icon-nav-placeholder"></div>
+
+
+  <section class="mission" id="mission">
+    <div class="fork-icon">🍴</div>
+    <h2>Our Culinary Mission</h2>
+    <p class="mission-quote">
+      "We believe that food is the universal language of humanity.
+      Our goal is to preserve and celebrate cultural heritage by
+      sharing the stories behind the world's most iconic dishes."
+    </p>
+    <div class="stats">
+      <div class="stat-item reveal">
+        <div class="number">190+</div>
+        <div class="label">Countries</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="number">5k+</div>
+        <div class="label">Recipes</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="number">1M+</div>
+        <div class="label">Chefs</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="specials" id="specials">
+    <div class="section-header">
+      <div>
+        <h2>Daily Specials</h2>
+        <p class="subtitle">Hand-picked global favorites</p>
+      </div>
+      <a href="#" class="see-all">SEE ALL ↗</a>
+    </div>
+
+    <div class="bento-grid">
+      <div class="food-card reveal">
+        <img src="https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=700&q=80" alt="Authentic Sushi"/>
+        <div class="overlay"></div>
+        <div class="heart-btn">♡</div>
+        <div class="card-info">
+          <span class="badge">Japan</span>
+          <h3>Authentic Sushi</h3>
+          <div class="card-meta">
+            <span>⏱ 45m</span>
+            <span>⭐ 4.9</span>
+          </div>
         </div>
+      </div>
+
+      <div class="food-card reveal">
+        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=700&q=80" alt="Street Tacos"/>
+        <div class="overlay"></div>
+        <div class="card-info">
+          <span class="badge">Mexico</span>
+          <h3>Street Tacos</h3>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&q=80" alt="Butter Croissant"/>
+        <div class="overlay"></div>
+        <div class="card-info">
+          <span class="badge">France</span>
+          <h3>Butter Croissant</h3>
+        </div>
+      </div>
+
+      <div class="food-card reveal">
+        <img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?w=700&q=80" alt="Pad Thai"/>
+        <div class="overlay"></div>
+        <div class="card-info">
+          <span class="badge">Thailand</span>
+          <h3>Pad Thai</h3>
+          <div class="card-meta">
+            <span>⏱ 10m</span>
+            <span>⭐ 4.9</span>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<section class="newsletter" id="newsletter">
+  </section>
+
+  <section class="newsletter" id="newsletter">
     <h2>Join the Club</h2>
     <p>Exclusive recipes and travel stories every Sunday morning.</p>
     <div class="newsletter-form">
@@ -77,10 +154,11 @@
       <button class="btn-subscribe">Subscribe</button>
     </div>
   </section>
-<div id="footer-placeholder"></div>
-<body>
 
-    <script src="script.js"></script>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
